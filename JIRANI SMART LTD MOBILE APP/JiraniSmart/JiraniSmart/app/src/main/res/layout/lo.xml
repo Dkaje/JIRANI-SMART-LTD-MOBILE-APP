@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5sp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/borrow" />
+
+    <TextView
+        android:id="@+id/loanertyp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:layout_toEndOf="@+id/img"
+        android:text="loantype" />
+
+    <TextView
+        android:id="@+id/lonAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loanertyp"
+        android:layout_marginStart="5sp"
+        android:layout_toEndOf="@+id/img"
+        android:text="loanAmount"
+        android:textStyle="bold"
+        android:textColor="#042587" />
+
+    <TextView
+        android:id="@+id/brwLn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lonAmt"
+        android:layout_toStartOf="@+id/counter"
+        android:layout_marginStart="5sp"
+        android:layout_toEndOf="@+id/img"
+        android:text="Borrow Loan"
+        android:textColor="#03800E"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lonAmt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10sp"
+        android:text="ln"
+        android:textColor="#000"
+        android:textStyle="bold" />
+</RelativeLayout>

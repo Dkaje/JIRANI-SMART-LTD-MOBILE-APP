@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finance.ManageLoan">
+
+    <android.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/addNewLoan"
+        android:layout_marginRight="10sp"
+        android:background="#73B2E4"
+        app:queryHint="Search a here" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New"
+        android:background="#73B2E4"
+        android:textAllCaps="false"
+        android:id="@+id/addNewLoan"
+        android:layout_alignParentRight="true"/>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search">
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LOAN_TYPE"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LOAN_AMOUNT"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listed"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/table"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="5sp"
+        android:layout_marginBottom="5sp" />
+</RelativeLayout>

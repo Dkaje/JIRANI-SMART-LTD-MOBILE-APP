@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10sp">
+    <android.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        app:queryHint="Search here" />
+    <ListView
+        android:id="@+id/listMess"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnExit" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:text="exit" />
+</RelativeLayout>

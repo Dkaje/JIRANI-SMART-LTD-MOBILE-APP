@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="5sp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/myIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ori"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ff0000" />
+
+                <TextView
+                    android:id="@+id/mktSec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ori"
+                    android:layout_marginTop="10sp"
+                    android:text="Marketable Securities"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spnType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mktSec"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spnType"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/circleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10sp"
+                        android:background="#9C5B71"
+                        android:scaleType="fitXY"
+                        android:visibility="visible" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/setOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/circleView">
+
+                        <EditText
+                            android:id="@+id/worth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/white"
+                            android:hint="Estimated value"
+                            android:inputType="numberDecimal"
+                            android:maxLength="8"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/settow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setOne">
+
+                        <EditText
+                            android:id="@+id/existence"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/white"
+                            android:hint="Existence in terms of years"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/giver"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relative"
+                    android:background="#ff0000" />
+
+                <TextView
+                    android:id="@+id/accRece"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/giver"
+                    android:layout_marginTop="5sp"
+                    android:text="Account Receivables"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spnTypeTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accRece"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spnTypeTwo"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/myImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10sp"
+                        android:background="#9C5B71"
+                        android:scaleType="fitXY"
+                        android:visibility="visible" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/myImage">
+
+                        <EditText
+                            android:id="@+id/worthOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/white"
+                            android:hint="Estimated value"
+                            android:inputType="numberDecimal"
+                            android:maxLength="8"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/setFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etFour">
+
+                        <EditText
+                            android:id="@+id/existenceOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/white"
+                            android:hint="Existence in terms of years"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/rece"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeTwo"
+                    android:background="#ff0000" />
+
+                <TextView
+                    android:id="@+id/machSec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rece"
+                    android:layout_marginTop="5sp"
+                    android:text="Machinery Securities"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spnTypeThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/machSec"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spnTypeThree"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/cartex"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10sp"
+                        android:background="#9C5B71"
+                        android:scaleType="fitXY" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etyoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cartex">
+
+                        <EditText
+                            android:id="@+id/worthTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/white"
+                            android:hint="Estimated value"
+                            android:inputType="numberDecimal"
+                            android:maxLength="8"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/setMwisho"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/etyoo">
+
+                        <EditText
+                            android:id="@+id/existenceTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/white"
+                            android:hint="Existence in terms of years"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textSize="16sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/last"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/myIL"
+                android:background="#ff0000" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="5sp"
+                android:layout_toStartOf="@+id/btnClose"
+                android:background="#BCB7B7"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10sp"
+                android:background="#BCB7B7"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

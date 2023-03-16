@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/texter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="money"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10sp"
+        android:text="disburse" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_marginTop="10sp"
+        android:layout_toStartOf="@+id/btnDis"
+        android:text="exit" />
+
+    <Button
+        android:id="@+id/btnPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_marginTop="10sp"
+        android:layout_toStartOf="@+id/btnClose"
+        android:text="print" />
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jiranismart">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/best"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/best"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".client.SeizeMe"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".auction.ManageDefa"
+            android:exported="false"
+            android:parentActivityName=".auction.AuctDash" />
+        <activity
+            android:name=".auction.AssessHistory"
+            android:exported="false"
+            android:parentActivityName=".auction.AuctDash" />
+        <activity
+            android:name=".finance.RejectedPA"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".finance.ApprovedPA"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".client.HistPay"
+            android:exported="false"
+            android:parentActivityName=".client.Deposit" />
+        <activity
+            android:name=".client.Deposit"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".finance.ClientRepayment"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".client.ApplicationHis"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".client.Uncleared"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".client.SettledL"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".client.DefaultLoan"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".client.Issued"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".finance.IssuedLoan"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".finance.Disburse"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".client.MyCollateral"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".agent.AsessHist"
+            android:exported="false"
+            android:parentActivityName=".agent.AgentDash" />
+        <activity
+            android:name=".finance.LoanDefaulter"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".finance.UnclearedLoan"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".finance.SettledLoan"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".finance.ManageLoan"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaDash" />
+        <activity
+            android:name=".client.BorrowLoan"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".client.CollateralDetails"
+            android:exported="false"
+            android:parentActivityName=".client.ClieDash" />
+        <activity
+            android:name=".auction.ApplicationLoan"
+            android:exported="false"
+            android:parentActivityName=".auction.AuctDash" />
+        <activity
+            android:name=".auction.AssessPending"
+            android:exported="false"
+            android:parentActivityName=".auction.AuctDash" />
+        <activity
+            android:name=".agent.Assessment"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:parentActivityName=".agent.AgentDash"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory.SiezedCollateral"
+            android:exported="false"
+            android:parentActivityName=".inventory.InventDash" />
+        <activity
+            android:name=".inventory.CollateralNew"
+            android:exported="false"
+            android:parentActivityName=".inventory.InventDash" />
+        <activity
+            android:name=".inventory.AgentHist"
+            android:exported="false"
+            android:parentActivityName=".inventory.AgentNew" />
+        <activity
+            android:name=".inventory.AgentNew"
+            android:exported="false"
+            android:parentActivityName=".inventory.InventDash" />
+        <activity
+            android:name=".inventory.InventDash"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".inventory.InventReg"
+            android:exported="false"
+            android:parentActivityName=".inventory.InventLog" />
+        <activity
+            android:name=".inventory.InventLog"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".finance.FinaDash"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".finance.FinaReg"
+            android:exported="false"
+            android:parentActivityName=".finance.FinaLog" />
+        <activity
+            android:name=".finance.FinaLog"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".client.ClieDash"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".client.ClieReg"
+            android:exported="false"
+            android:parentActivityName=".client.ClentLog" />
+        <activity
+            android:name=".client.ClentLog"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".auction.AuctDash"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".auction.AuctReg"
+            android:exported="false"
+            android:parentActivityName=".auction.AuctLog" />
+        <activity
+            android:name=".auction.AuctLog"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".agent.AgentDash"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".agent.AgentReg"
+            android:exported="false"
+            android:parentActivityName=".agent.AgemntLog" />
+        <activity
+            android:name=".agent.AgemntLog"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

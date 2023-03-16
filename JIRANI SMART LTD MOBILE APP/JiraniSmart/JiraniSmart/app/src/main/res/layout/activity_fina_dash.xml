@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#fff"
+    tools:context=".finance.FinaDash">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:background="#fff"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/determiner">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/MANAGELoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/pencil" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MANAGE LOANS"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CLIENTdEPOSITS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/MANAGELoan"
+                        android:layout_gravity="fill"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/money" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CLIENT DEPOSITS"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/financeBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CLIENTdEPOSITS"
+                        android:layout_gravity="fill"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/history" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MANAGE FLOW"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

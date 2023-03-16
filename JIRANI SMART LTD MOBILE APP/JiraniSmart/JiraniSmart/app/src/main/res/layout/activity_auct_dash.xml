@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#fff"
+    tools:context=".auction.AuctDash">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:background="#fff"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/determiner">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/newAssessment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/assessment" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AGENCY REPORTS"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/LOANaPPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/newAssessment"
+                        android:layout_gravity="fill"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/assessment" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NEW LOAN APPLICATIONS"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hisAssessment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/LOANaPPS"
+                        android:layout_gravity="fill"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="30dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/defaultor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MANAGE DEFAULTERS"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

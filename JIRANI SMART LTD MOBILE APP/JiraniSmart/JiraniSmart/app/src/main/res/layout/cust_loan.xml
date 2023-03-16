@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp">
+
+    <Button
+        android:id="@+id/btnAddNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Borrow loan" />
+
+    <Button
+        android:id="@+id/btnDisb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddNew"
+        android:text="application history" />
+
+    <Button
+        android:id="@+id/btnIssued"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDisb"
+        android:text="issued loans" />
+
+    <Button
+        android:id="@+id/btnSettled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIssued"
+        android:drawableRight="@drawable/settled"
+        android:text="settled loans" />
+
+    <Button
+        android:id="@+id/btnuncle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSettled"
+        android:drawableRight="@drawable/failed"
+        android:text="uncleared loans" />
+
+    <Button
+        android:id="@+id/btnDef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnuncle"
+        android:drawableRight="@drawable/defaultor"
+        android:text="default loan" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDef"
+        android:layout_alignParentEnd="true"
+        android:text="Close" />
+
+</RelativeLayout>
